@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deactivation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color:white;
+            padding: 15px;
+        }
+
+        label {
+           display: block;
+           margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+           width: 90%;
+           padding: 8px;
+           margin-bottom: 15px;
+           box-sizing: border-box;
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+
+        button[type="submit"] {
+           background-color: #4CAF50;
+           color: white;
+           padding: 10px 20px;
+           border: none;
+           cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Deactivation Form</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="reason">Reason for Deactivation:</label>
+        <select id="reason" name="reason" required>
+            <option value="">Select a reason</option>
+            <option value="no-longer-needed">No longer needed</option>
+            <option value="privacy-concerns">Privacy concerns</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Deactivate</button>
+    </form>
+</body>
+</html>
+

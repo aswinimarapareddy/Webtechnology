@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naukari Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #0072C6;
+            font-size:20px;
+        }
+        
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+        
+        button[type="submit"] {
+            background-color: #0072C6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        } 
+    </style>
+</head>
+<body>
+    <form>
+        <img src="naukari image.jpg" alt="Naukari Logo" width="200">
+        <h1>Naukari Registration Form</h1>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        <label for="experience">Years of Experience:</label>
+        <input type="text" id="experience" name="experience">
+        
+        <label for="job-title">Desired Job Title:</label>
+        <input type="text" id="job-title" name="job-title" required>
+
+        <label for="resume-upload">Upload Resume:</label>
+        <input type="file" id="resume-upload" name="resume-upload" required>
+
+        <label for="industry">Industry:</label>
+        <select id="industry" name="industry" required>
+            <option value="">Select Industry</option>
+            <option value="it">Information Technology</option>
+            <option value="finance">Finance</option>
+            <option value="healthcare">Healthcare</option>
+        </select>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

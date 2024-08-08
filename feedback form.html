@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Learning Course Feedback</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           margin: 20px;
+           color: rgb(226, 186, 186);
+        }
+        
+        h1{
+            font-size: 28px;
+            color: rgb(254, 145, 12);
+            text-align: center;
+        } 
+
+        form {
+           max-width: 300px;
+           margin: 0 auto;
+           padding: 15px;
+           background-color: rgb(13, 13, 13);
+        }
+
+        label {
+           display: block;
+           margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+           width: 100%;
+           padding: 8px;
+           margin-bottom: 15px;
+           box-sizing: border-box;
+        }
+
+        .rating {
+           margin-bottom: 15px;
+           display: flex;
+           flex-direction: row-reverse;
+           justify-content: flex-end;
+        }
+
+        .rating input[type="radio"] {
+           display:none;
+           
+        }
+
+        .rating label {
+           color: #f7f3f3;
+           font-size: 24px;
+           cursor: pointer;
+        }
+
+        .rating input[type="radio"]:checked ~ label {
+            color: #edb809;
+        }
+
+        button[type="submit"] {
+           background-color: #e4c4cb;
+           color: rgb(39, 37, 37);
+           padding: 10px 20px;
+           border: none;
+           cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>E-Learning Course Feedback</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+
+        <label for="rating">Rating:</label>
+        <div class="rating">
+            <input type="radio" id="rating-5" name="rating" value="5">
+            <label for="rating-5">&#9733;</label>
+            <input type="radio" id="rating-4" name="rating" value="4">
+            <label for="rating-4">&#9733;</label>
+            <input type="radio" id="rating-3" name="rating" value="3">
+            <label for="rating-3">&#9733;</label>
+            <input type="radio" id="rating-2" name="rating" value="2">
+            <label for="rating-2">&#9733;</label>
+            <input type="radio" id="rating-1" name="rating" value="1">
+            <label for="rating-1">&#9733;</label>
+        </div>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
